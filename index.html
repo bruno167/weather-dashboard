@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/src/styles/styles.css">
 </head>
 <body>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
+    <header>
 
+    </header>
+    <main>
+        <div class="container">
+            <h1>Weather Dashboard</h1>
+            <div class="search">
+                <input type="text" id="cityInput" placeholder="Digite uma cidade...">
+                <button id="searchBtn">Buscar</button>
+            </div>
+            <div class="weather-info">
+                <h2 id="cityName"></h2>
+                <p id="temperature"></p>
+                <p id="description"></p>
+                <p id="humidity"></p>
+                <p id="windSpeed"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
 
-    <div class="container">
-        <h1>Weather Dashboard</h1>
-        <div class="search">
-            <input type="text" id="cityInput" placeholder="Digite uma cidade...">
-            <button id="searchBtn">Buscar</button>
-        </div>
-        <div class="weather-info">
-            <h2 id="cityName"></h2>
-            <p id="temperature"></p>
-            <p id="description"></p>
-            <p id="humidity"></p>
-            <p id="windSpeed"></p>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    </footer>
+    <script src="/src/scripts/geolocation.js"></script>
+    <script src="/src/scripts/script.js"></script>
 </body>
 </html>
